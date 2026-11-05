@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:darkblue;
+            color: white;
+        }
+        nav {
+            background-color: black;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: cyan;
+        }
+        .intro {
+            text-align: center;
+            padding: 65px 20px;
+            background-color:black;
+        }
+
+        .intro h1 {
+            font-size: 38px;
+            color: cyan;
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: cyan;
+            color: black;
+            padding: 12px 22px;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        section {
+            padding: 35px 8%;
+        }
+        h2 {
+            color: cyan;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: #1d2a40;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-sizing: border-box;
+            border: 1px solid #34445f;
+        }
+        .card h3 {
+            color: #7ee7ff;
+        }
+        .card p {
+            line-height: 1.6;
+        }
+
+        .skill {
+            display: inline-block;
+            background-color: #243750;
+            padding: 12px 18px;
+            margin: 7px;
+            border-radius: 5px;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #52647d;
+            border-radius: 5px;
+            background-color: #17243a;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: cyan;
+            color: black;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #76eaff;
+        }
+
+        #message {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .faq {
+            max-width: 650px;
+            margin: auto;
+        }
+        .question {
+            background-color: #1d2a40;
+            padding: 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .answer {
+            display: none;
+            background-color: #243750;
+            padding: 15px;
+            line-height: 1.6;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #080d18;
+            text-align: center;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .intro h1 {
+                font-size: 29px;
+            }
+
+            section {
+                padding: 30px 5%;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="intro" id="home">
+        <h1>Hello, I'm Shivam!</h1>
+        <p>
+            First-Year B.Tech IT Student<br>
+            KIET Group of Institutions
+        </p>
+        <p>
+            I am learning programming and web development.
+            My goal is to become a skilled software engineer
+            and build useful real-world projects.
+        </p>
+        <a href="#projects" class="button">View My Projects</a>
+    </div>
+    <section id="education">
+        <h2>My Education</h2>
+        <div class="container">
+            <div class="card">
+                <h3>B.Tech Information Technology</h3>
+                <p>KIET Group of Institutions</p>
+                <p>Batch: 2026–2030</p>
+                <p>Currently pursuing my degree.</p>
+            </div>
+            <div class="card">
+                <h3>Class 12</h3>
+                <p>Board: ICSE</p>
+                <p>Stream: Science</p>
+                <p>Completed school education.</p>
+            </div>
+            <div class="card">
+                <h3>Class 10</h3>
+                <p>Board: ICSE</p>
+                <p>Completed secondary education.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="container">
+            <span class="skill">C++</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript Basics</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">GitHub Basics</span>
+            <span class="skill">Communication</span>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Gaming Club Website</h3>
+                <p>
+                    A website showing available games,
+                    gaming schedules, membership plans,
+                    tournaments, and a registration form.
+                </p>
+                <p><b>Technologies:</b> HTML, CSS</p>
+            </div>
+            <div class="card">
+                <h3>Fire Detection System</h3>
+                <p>
+                    A prototype that uses a fire sensor,
+                    Arduino, relay module, and water pump
+                    to demonstrate automatic fire response.
+                </p>
+                <p><b>Technologies:</b> Arduino and Electronics</p>
+            </div>
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A personal website presenting my
+                    education, skills, projects, achievements,
+                    and contact information.
+                </p>
+                <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+    </section>
+    <section id="achievements">
+        <h2>My Achievements</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Debate and Declamation</h3>
+                <p>
+                    Interested in public speaking,
+                    debates, and declamation competitions.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Project Development</h3>
+                <p>
+                    Worked on an academic fire detection
+                    and water pump prototype.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Programming</h3>
+                <p>
+                    Learning C++ programming and
+                    problem-solving fundamentals.
+                </p>
+                <p>Certificate: Add after completion.</p>
+            </div>
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>
+                    Learning HTML, CSS, and JavaScript
+                    by building websites.
+                </p>
+                <p>Certificate: Add after completion.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card" style="margin: auto; max-width: 500px; width: 100%;">
+            <p><b>Name:</b> Shivam</p>
+            <p>
+                <b>Email:</b>
+                shivamsja@gmail.com
+            </p>
+
+            <p>
+                <b>LinkedIn:</b>
+                Shivam Munakhiya
+            </p>
+
+            <p>
+                <b>GitHub:</b>
+                Shivam Munakhiya
+            </p>
+
+        </div>
+        <h2>Send Me a Message</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <textarea
+                id="userMessage"
+                placeholder="Write your message"
+            ></textarea>
+
+            <button type="submit">Submit</button>
+
+            <p id="message" role="status" aria-live="polite"></p>
+
+        </form>
+    </section>
+    <script>
+        document.getElementById("contactForm").onsubmit = function(event) {
+
+            event.preventDefault();
+
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let userMessage = document.getElementById("userMessage").value.trim();
+            let message = document.getElementById("message");
+            if (name === "" || email === "" || userMessage === "") {
+                message.style.color = "orange";
+                message.innerHTML = "Please fill in all the fields.";
+            }
+            else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                message.style.color = "orange";
+                message.innerHTML = "Please enter a valid email address.";
+            }
+            else {
+                message.style.color = "lightgreen";
+                message.innerHTML =
+                    "Thank you, " + name + "! Your form is valid.";
+                document.getElementById("contactForm").reset();
+            }
+        };
+        
+    </script>
+</body>
+</html>
